@@ -18,7 +18,7 @@ Our code will be released soon after the review is completed.
 
 
 ## Examples
-Samples by **stochastic sampler** (ER-SDE-Solver-3 (ours)) and deterministic sampler (DPM-Solver-3) with 10, 20, 30, 40, 50 number of function evaluations (NFE) with the **same random seed** , using the pretrained model [guided-diffusion](https://github.com/openai/guided-diffusion) on ImageNet 256 × 256. 
+Samples by **stochastic sampler** (ER-SDE-Solver-3 (ours)) and deterministic sampler (DPM-Solver-3) with 10, 20, 30, 40, 50 number of function evaluations (NFE) with the **same random seed** , using the pretrained model [guided-diffusion](https://github.com/openai/guided-diffusion) on ImageNet 256 × 256. The class is fixed as dome and classifier guidance scale is 2.0.
 
 
 **DPM-Solver-3(left)**  and  **ER-SDE-Solver-3(right)** 
