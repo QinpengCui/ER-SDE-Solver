@@ -23,32 +23,47 @@ Samples by **stochastic sampler** (ER-SDE-Solver-3 (ours)) and deterministic sam
 
 **DPM-Solver-3(left)**  and  **ER-SDE-Solver-3(right)** 
 
-<div style="display: flex; justify-content: space-between;"> 
-  <b>NFE=10<b> 
+<div style="display: flex; justify-content: space-between;font-weight: normal;"> 
+  NFE=10
   <img src="\assets\DPM_ImageNet_256x256_10_steps.jpg" alt="Image 1" style="width: 40%;"> 
   <img src="\assets\Ours_ImageNet_256x256_10_steps.jpg"  alt="Image 2" style="width: 40%;">     
 </div>
 <br> 
 <div style="display: flex; justify-content: space-between;"> 
-  <b>NFE=20<b> <img src="\assets\DPM_ImageNet_256x256_20_steps.jpg" alt="Image 1" style="width: 40%;"> 
-               <img src="\assets\Ours_ImageNet_256x256_20_steps.jpg"  alt="Image 2" style="width: 40%;">   
+  NFE=20 
+  <img src="\assets\DPM_ImageNet_256x256_20_steps.jpg" alt="Image 1" style="width: 40%;"> 
+  <img src="\assets\Ours_ImageNet_256x256_20_steps.jpg"  alt="Image 2" style="width: 40%;">   
 </div>
 <br>  
 <div style="display: flex; justify-content: space-between;"> 
-  <b>NFE=30<b> <img src="\assets\DPM_ImageNet_256x256_30_steps.jpg" alt="Image 1" style="width: 40%;"> 
-               <img src="\assets\Ours_ImageNet_256x256_30_steps.jpg"  alt="Image 2" style="width: 40%;">   
+  NFE=30 
+  <img src="\assets\DPM_ImageNet_256x256_30_steps.jpg" alt="Image 1" style="width: 40%;"> 
+  <img src="\assets\Ours_ImageNet_256x256_30_steps.jpg"  alt="Image 2" style="width: 40%;">   
 </div>
 <br>  
 <div style="display: flex; justify-content: space-between;"> 
-  <b>NFE=40<b> <img src="\assets\DPM_ImageNet_256x256_40_steps.jpg" alt="Image 1" style="width: 40%;"> 
-               <img src="\assets\Ours_ImageNet_256x256_40_steps.jpg"  alt="Image 2" style="width: 40%;">   
+  NFE=40
+  <img src="\assets\DPM_ImageNet_256x256_40_steps.jpg" alt="Image 1" style="width: 40%;"> 
+  <img src="\assets\Ours_ImageNet_256x256_40_steps.jpg"  alt="Image 2" style="width: 40%;">   
 </div>
 <br>  
 <div style="display: flex; justify-content: space-between;"> 
-  <b>NFE=50<b> <img src="\assets\DPM_ImageNet_256x256_50_steps.jpg" alt="Image 1" style="width: 40%;"> 
-               <img src="\assets\Ours_ImageNet_256x256_50_steps.jpg"  alt="Image 2" style="width: 40%;">   
+  NFE=50
+  <img src="\assets\DPM_ImageNet_256x256_50_steps.jpg" alt="Image 1" style="width: 40%;"> 
+  <img src="\assets\Ours_ImageNet_256x256_50_steps.jpg"  alt="Image 2" style="width: 40%;">   
 </div>
 
 
 
+## Citation
+If you find this method and/or code useful, please consider citing
+
+```bibtex
+@article{cui2023elucidating,
+  title={Elucidating the solution space of extended reverse-time SDE for diffusion models},
+  author={Cui, Qinpeng and Zhang, Xinyi and Lu, Zongqing and Liao, Qingmin},
+  journal={arXiv preprint arXiv:2309.06169},
+  year={2023}
+}
+```
 
