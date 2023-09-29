@@ -1,8 +1,9 @@
-## ER-SDE-Solver for EDM
+# ER-SDE-Solver for EDM
 
 This is the example code for ER-SDE-Solver applying to [EDM](https://github.com/NVlabs/edm). The code is heavily based on [EDM codebase](https://github.com/NVlabs/edm) .
 
 The example command can be found in `run.sh`. Before running the command, it is necessary to download pre-trained model checkpoints based on the corresponding command. The stats file for evaluating the FID is the same as the original repo. 
+
 
 
 
