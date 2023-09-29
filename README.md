@@ -10,10 +10,31 @@ ER-SDE-Solver is a family of fast dedicated high-order solvers for extended reve
 
 
 ## Usage
-
-Our code will be released soon after the review is completed.
-
-
+Before using our method, you need to confirm the *prediction type* of the pre-trained model and design the *noise schedule* (and *alphas schedule*) according to your needs. Then, refer to the following code example to use our method. 
+#### For VE-type
+```
+from er_sde_solver import ER_SDE_Solver
+sampler = ER_SDE_Solver(sde_type='ve', model_prediction_type='x_start')
+x = sampler.ve_3_order_taylor(
+    net,          # neural network
+    x,            # initial Gaussian noise
+    sigmas,       # noise schedule
+    times,        # step size schedule
+)
+```
+#### For VP-type
+```
+from er_sde_solver import ER_SDE_Solver
+sampler = ER_SDE_Solver(sde_type='vp', model_prediction_type='x_start')
+x = sampler.vp_3_order_taylor(
+    net,          # neural network
+    x,            # initial Gaussian noise
+    alphas,       # alpha_t_bar schedule in DDPM
+    sigmas,       # noise schedule
+    times,        # step size schedule
+)
+```
+We provide two specific usage examples, which are combined with [EDM](https://github.com/NVlabs/edm) and [guided-diffusion](https://github.com/openai/guided-diffusion). Please refer to the folder `examples` for details.
 
 
 
