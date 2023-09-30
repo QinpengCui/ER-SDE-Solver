@@ -6,7 +6,6 @@ from .er_sde_diffusion_classifier import ER_SDE_Solver_Diffusion as ERD
 
 NUM_CLASSES = 1000
 
-# 默认训练时的配置
 def diffusion_defaults():
     """
     Defaults for image and classifier training.
@@ -66,8 +65,6 @@ def classifier_and_diffusion_defaults():
     res.update(diffusion_defaults())
     return res
 
-
-# 模型与扩散模式初始化
 def create_model_and_diffusion(
     image_size,
     class_cond,
@@ -117,7 +114,6 @@ def create_model_and_diffusion(
     )
     return model, diffusion
 
-# 不用修改
 def create_model(
     image_size,
     num_channels,
